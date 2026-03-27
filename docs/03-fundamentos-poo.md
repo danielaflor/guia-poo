@@ -1,6 +1,3 @@
-
-### `docs/03-fundamentos-poo.md`
-```md
 # Fundamentos de POO
 
 A Programação Orientada a Objetos organiza o software a partir de entidades que reúnem dados e comportamentos.
