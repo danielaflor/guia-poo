@@ -1,0 +1,29 @@
+site_name: Guia de Transição de Java para Python
+site_description: Material de apoio para a transição de Java para Python em Programação Orientada a Objetos
+site_url: https://danielaflor.github.io/guia-poo/
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+
+plugins:
+  - search
+
+nav:
+  - Início: index.md
+  - Apresentação: 01-apresentacao.md
+  - Java x Python: 02-java-x-python.md
+  - Fundamentos de POO: 03-fundamentos-poo.md
+  - Tratamento de Exceções: 04-tratamento-de-excecoes.md
+  - UML e POO: 05-uml.md
+  - Mapeamento Objeto-Relacional: 06-orm.md
+  - Banco de Dados: 07-banco-de-dados.md
+  - Relatórios: 08-relatorios.md
+  - Exercícios de Transição: 09-exercicios.md
