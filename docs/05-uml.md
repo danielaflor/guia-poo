@@ -1,6 +1,3 @@
-
-### `docs/05-uml.md`
-```md
 # UML e POO
 
 A UML não pertence a uma linguagem específica. Ela serve para representar a estrutura e o comportamento de sistemas orientados a objetos.
