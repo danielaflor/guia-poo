@@ -1,6 +1,3 @@
-
-### `docs/03-fundamentos-poo.md`
-```md
 # Fundamentos de POO
 
 A Programação Orientada a Objetos organiza o software a partir de entidades que reúnem dados e comportamentos.
@@ -34,10 +31,15 @@ public class Produto {
     String nome;
     double preco;
 }
+```
 
+### Em Python
+
+```python
 class Produto:
     def __init__(self, nome, preco):
         self.nome = nome
         self.preco = preco
+```
 
         
