@@ -18,7 +18,7 @@ A Programação Orientada a Objetos organiza o software a partir de entidades qu
 
 ## Como abordar neste guia
 
-Em cada conceito, a ideia é observar:
+Em cada conceito, a idéia é observar:
 
 1. o que ele significa;
 2. como costumava ser escrito em Java;
