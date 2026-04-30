@@ -52,11 +52,11 @@ class Pessoa:
 #### Em Java
 
 ```java
-public class Pessoa {
+ public class Pessoa {
 >    public Pessoa(String nome) {
-        this.nome = nome;
-    }
-}
+         this.nome = nome;
+     }
+ }
 
 >Pessoa p1 = new Pessoa("Ana");
 ```
@@ -64,9 +64,9 @@ public class Pessoa {
 #### Em Python
 
 ```python
-class Pessoa:
+ class Pessoa:
 >    def __init__(self, nome):
-        self.nome = nome
+         self.nome = nome
 
 >p1 = Pessoa("Ana")
 ```
@@ -76,7 +76,7 @@ class Pessoa:
 #### Em Java
 
 ```java
-public class Pessoa {
+ public class Pessoa {
 >    String nome;
 >    int idade;
 }
@@ -85,24 +85,24 @@ public class Pessoa {
 #### Em Python
 
 ```python
-class Pessoa:
-    def __init__(self, nome, idade):
+ class Pessoa:
+     def __init__(self, nome, idade):
 >        self.nome = nome
 >        self.idade = idade
 ```
 
-### 
+### Métodos
 
 #### Em Java
 
 ```java
-public class Pessoa {
+ public class Pessoa {
 
-    String nome;
+     String nome;
 
-    public Pessoa(String nome) {
-        this.nome = nome;
-    }
+     public Pessoa(String nome) {
+         this.nome = nome;
+     }
 
 >    public void apresentar() {
 >        System.out.println("Olá, meu nome é " + nome);
@@ -113,11 +113,107 @@ public class Pessoa {
 #### Em Python
 
 ```python
-class Pessoa:
-
-    def __init__(self, nome):
-        self.nome = nome
+ class Pessoa:
+ 
+     def __init__(self, nome):
+         self.nome = nome
 
 >    def apresentar(self):
 >        print(f"Olá, meu nome é {self.nome}")
+```
+
+### Encapsulamento
+
+#### Em Java
+
+```java
+ public class Pessoa {
+ 
+     // atributo privado
+>    private String nome;
+ 
+>    public String getNome() {
+         return nome;
+     }
+ 
+     public void setNome(String nome) {
+         this.nome = nome;
+     }
+ }
+```
+
+#### Em Python
+
+```python
+ class Pessoa:
+ 
+     def __init__(self, nome):  
+         # atributo privado
+>        self._nome = nome 
+
+>    @property
+     def nome(self):
+         return self._nome
+
+>    @nome.setter
+     def nome(self, nome):
+         self._nome = nome
+```
+
+### Herança
+
+#### Em Java
+
+```java
+ public class Animal {
+
+    public void emitirSom() {
+         System.out.println("Som genérico");
+     }
+ }
+
+>public class Cachorro extends Animal {
+
+     public void latir() {
+        System.out.println("Au au");
+     }
+ }
+
+ Cachorro dog = new Cachorro();
+
+ dog.emitirSom();
+ dog.latir();
+```
+
+#### Em Python
+
+```python
+ class Animal:
+
+     def emitir_som(self):
+         print("Som genérico")
+
+>class Cachorro(Animal):
+
+     def latir(self):
+         print("Au au")
+
+dog = Cachorro()
+
+dog.emitir_som()
+dog.latir()
+```
+
+### Polimorfismo
+
+#### Em Java
+
+```java
+
+```
+
+#### Em Python
+
+```python
+
 ```
