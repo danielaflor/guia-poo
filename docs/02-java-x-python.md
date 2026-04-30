@@ -52,33 +52,33 @@ class Pessoa:
 #### Em Java
 
 ```java
-//public class Pessoa {
-    public Pessoa(String nome) {
+public class Pessoa {
+>    public Pessoa(String nome) {
         this.nome = nome;
     }
-//}
+}
 
-Pessoa p1 = new Pessoa("Ana");
+>Pessoa p1 = new Pessoa("Ana");
 ```
 
 #### Em Python
 
 ```python
-#class Pessoa:
-    def __init__(self, nome):
+class Pessoa:
+>    def __init__(self, nome):
         self.nome = nome
 
-p1 = Pessoa("Ana")
+>p1 = Pessoa("Ana")
 ```
 
-### Atributo
+### Atributos
 
 #### Em Java
 
 ```java
 public class Pessoa {
-    String nome;
-    int idade;
+>    String nome;
+>    int idade;
 }
 ```
 
@@ -87,6 +87,37 @@ public class Pessoa {
 ```python
 class Pessoa:
     def __init__(self, nome, idade):
+>        self.nome = nome
+>        self.idade = idade
+```
+
+### 
+
+#### Em Java
+
+```java
+public class Pessoa {
+
+    String nome;
+
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+
+>    public void apresentar() {
+>        System.out.println("Olá, meu nome é " + nome);
+>    }
+}
+```
+
+#### Em Python
+
+```python
+class Pessoa:
+
+    def __init__(self, nome):
         self.nome = nome
-        self.idade = idade
+
+>    def apresentar(self):
+>        print(f"Olá, meu nome é {self.nome}")
 ```
