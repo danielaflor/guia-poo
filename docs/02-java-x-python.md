@@ -151,8 +151,7 @@ class Pessoa:
          # atributo privado
 >        self._nome = nome 
 
->    @property
-     def nome(self):
+>     def nome(self):
          return self._nome
 
 >    @nome.setter
@@ -209,11 +208,53 @@ dog.latir()
 #### Em Java
 
 ```java
+ public class Animal {
 
+>    public void emitirSom() {
+        System.out.println("Som genérico");
+     }
+ }
+ public class Cachorro extends Animal {
+
+    
+>    public void emitirSom() {
+         System.out.println("Au au");
+     }
+ }
+ public class Gato extends Animal {
+
+     
+>    public void emitirSom() {
+         System.out.println("Miau");
+     }
+ }
+ 
+ Animal a1 = new Cachorro();
+ Animal a2 = new Gato();
+
+>a1.emitirSom();
+>a2.emitirSom();
 ```
 
 #### Em Python
 
 ```python
+ class Animal:
 
+>    def emitir_som(self):
+         print("Som genérico")
+ class Cachorro(Animal):
+
+>    def emitir_som(self):
+         print("Au au")
+ class Gato(Animal):
+
+>    def emitir_som(self):
+         print("Miau")
+ 
+ a1 = Cachorro()
+ a2 = Gato()
+
+>a1.emitir_som()
+>a2.emitir_som()
 ```
